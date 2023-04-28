@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftletradiobuttonpicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Appracatappra/SwiftletRadioButtonPicker.git",
+      "state" : {
+        "revision" : "9ed6e8c72c556bc653fbe48baffb4a7bf8f96f20",
+        "version" : "1.0.3"
+      }
+    }
+  ],
+  "version" : 2
+}
