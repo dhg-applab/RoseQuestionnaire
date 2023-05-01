@@ -10,6 +10,10 @@ import SwiftletRadioButtonPicker
 
 struct ContentView: View {
     @State var patientID: String = ""
+    @State var question1: String = ""
+    @State var question2: String = ""
+    @State var question3: String = ""
+    @State var question4: String = ""
     
     var body: some View {
         NavigationStack {
@@ -23,24 +27,33 @@ struct ContentView: View {
                             .textFieldStyle(.roundedBorder)
                             .padding(.bottom, 20.0)
                         
-                        RoseQuestion(title: "Within the last 1 year, have you ever had a severe pain across the front of your chest lasting for half an hour or more?")
-                        
-                        RoseQuestion(title: "Within the last 1 year, have you ever had any pain or discomfort in your chest?")
-                        
-                        RoseQuestion(title: "Did you get it when you walked uphill or hurry?")
-                        
-                        RoseQuestion(title: "Did you get it when you walked at an ordinary pace on the level?")
+                        RoseQuestion(
+                            title: "Within the last 1 year, have you ever had a severe pain across the front of your chest lasting for half an hour or more?",
+                            selection: $question1)
+
+                        RoseQuestion(
+                            title: "Within the last 1 year, have you ever had any pain or discomfort in your chest?",
+                            selection: $question2)
+
+                        RoseQuestion(
+                            title: "Did you get it when you walked uphill or hurry?",
+                            selection: $question3)
+
+                        RoseQuestion(
+                            title: "Did you get it when you walked at an ordinary pace on the level?",
+                            selection: $question4)
                     }
                 }
+                .scrollDismissesKeyboard(.immediately)
                 
                 Spacer()
                 
-                Button(action: {}) {
+                ShareLink(item: Helper.convertToCSV(answers)) {
                     Text("Save")
                         .frame(maxWidth: .infinity)
                         .padding(5)
-                }
-                .buttonStyle(.borderedProminent)
+                }.buttonStyle(BorderedProminentButtonStyle())
+                    .disabled(saveButtonDisabled)
             }
             .navigationTitle("Rose Questionnaire")
             .padding()

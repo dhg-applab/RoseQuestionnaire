@@ -11,8 +11,9 @@
 		35EDC31329FBC82E00603173 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EDC31229FBC82E00603173 /* ContentView.swift */; };
 		35EDC31529FBC82F00603173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35EDC31429FBC82F00603173 /* Assets.xcassets */; };
 		35EDC31829FBC82F00603173 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35EDC31729FBC82F00603173 /* Preview Assets.xcassets */; };
-		35EDC32429FBD5C500603173 /* SwiftletRadioButtonPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 35EDC32329FBD5C500603173 /* SwiftletRadioButtonPicker */; };
 		35EDC32829FBD8DE00603173 /* RoseQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EDC32729FBD8DE00603173 /* RoseQuestion.swift */; };
+		446C057729FFEEDA0057394B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446C057629FFEED90057394B /* Helper.swift */; };
+		446C057A2A0015210057394B /* ContentViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446C05792A0015210057394B /* ContentViewHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		35EDC31429FBC82F00603173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35EDC31729FBC82F00603173 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		35EDC32729FBD8DE00603173 /* RoseQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoseQuestion.swift; sourceTree = "<group>"; };
+		446C057629FFEED90057394B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		446C05792A0015210057394B /* ContentViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +32,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35EDC32429FBD5C500603173 /* SwiftletRadioButtonPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,11 +57,9 @@
 		35EDC30F29FBC82E00603173 /* Rose-Questionnaire */ = {
 			isa = PBXGroup;
 			children = (
-				35EDC31029FBC82E00603173 /* Rose_QuestionnaireApp.swift */,
 				35EDC31229FBC82E00603173 /* ContentView.swift */,
 				35EDC32729FBD8DE00603173 /* RoseQuestion.swift */,
-				35EDC31429FBC82F00603173 /* Assets.xcassets */,
-				35EDC31629FBC82F00603173 /* Preview Content */,
+				446C057829FFEF3D0057394B /* Supporting Files */,
 			);
 			path = "Rose-Questionnaire";
 			sourceTree = "<group>";
@@ -70,6 +70,18 @@
 				35EDC31729FBC82F00603173 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		446C057829FFEF3D0057394B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				446C057629FFEED90057394B /* Helper.swift */,
+				35EDC31029FBC82E00603173 /* Rose_QuestionnaireApp.swift */,
+				35EDC31429FBC82F00603173 /* Assets.xcassets */,
+				35EDC31629FBC82F00603173 /* Preview Content */,
+				446C05792A0015210057394B /* ContentViewHelper.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,7 +101,6 @@
 			);
 			name = "Rose-Questionnaire";
 			packageProductDependencies = (
-				35EDC32329FBD5C500603173 /* SwiftletRadioButtonPicker */,
 			);
 			productName = "Rose-Questionnaire";
 			productReference = 35EDC30D29FBC82E00603173 /* Rose-Questionnaire.app */;
@@ -120,7 +131,6 @@
 			);
 			mainGroup = 35EDC30429FBC82E00603173;
 			packageReferences = (
-				35EDC32229FBD5C500603173 /* XCRemoteSwiftPackageReference "SwiftletRadioButtonPicker" */,
 			);
 			productRefGroup = 35EDC30E29FBC82E00603173 /* Products */;
 			projectDirPath = "";
@@ -149,7 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				35EDC32829FBD8DE00603173 /* RoseQuestion.swift in Sources */,
+				446C057729FFEEDA0057394B /* Helper.swift in Sources */,
 				35EDC31329FBC82E00603173 /* ContentView.swift in Sources */,
+				446C057A2A0015210057394B /* ContentViewHelper.swift in Sources */,
 				35EDC31129FBC82E00603173 /* Rose_QuestionnaireApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +290,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Rose-Questionnaire/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Rose-Questionnaire/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = W47Y3X8372;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,7 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Rose-Questionnaire/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Rose-Questionnaire/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = W47Y3X8372;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -351,25 +363,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		35EDC32229FBD5C500603173 /* XCRemoteSwiftPackageReference "SwiftletRadioButtonPicker" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Appracatappra/SwiftletRadioButtonPicker.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		35EDC32329FBD5C500603173 /* SwiftletRadioButtonPicker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 35EDC32229FBD5C500603173 /* XCRemoteSwiftPackageReference "SwiftletRadioButtonPicker" */;
-			productName = SwiftletRadioButtonPicker;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35EDC30529FBC82E00603173 /* Project object */;
 }
