@@ -20,4 +20,22 @@ extension ContentView {
     var saveButtonDisabled: Bool {
         patientID.isEmpty || question1.isEmpty || question2.isEmpty || question3.isEmpty || question4.isEmpty
     }
+    
+    func resetQuestionnaire() {
+        patientID = ""
+        question1 = ""
+        question2 = ""
+        question3 = ""
+        question4 = ""
+    }
+    
+    func convertToCSV(_ data: [String: String]) -> String {
+        var csvString = "question,answer\n"
+
+        for element in data {
+            csvString += "\(element.key),\(element.value)\n"
+        }
+
+        return csvString
+    }
 }

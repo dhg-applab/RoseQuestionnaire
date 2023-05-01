@@ -19,7 +19,7 @@ struct ContentView: View {
         NavigationStack {
             VStack(alignment: .center) {
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 12.0) {
+                    VStack(alignment: .center, spacing: 12.0) {
                         Text("Patient ID:")
                             .font(.headline)
                         
@@ -42,13 +42,19 @@ struct ContentView: View {
                         RoseQuestion(
                             title: "Did you get it when you walked at an ordinary pace on the level?",
                             selection: $question4)
+                        
+                        Button(action: resetQuestionnaire) {
+                            Label("Repeat", systemImage: "repeat")
+                                .tint(.red)
+                        }
+                        .padding()
                     }
                 }
                 .scrollDismissesKeyboard(.immediately)
                 
                 Spacer()
                 
-                ShareLink(item: Helper.convertToCSV(answers)) {
+                ShareLink(item: convertToCSV(answers)) {
                     Text("Save")
                         .frame(maxWidth: .infinity)
                         .padding(5)
