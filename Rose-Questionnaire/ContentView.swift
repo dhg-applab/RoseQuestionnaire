@@ -19,7 +19,7 @@ struct ContentView: View {
         NavigationStack {
             VStack(alignment: .center) {
                 ScrollView {
-                    VStack(alignment: .center, spacing: 12.0) {
+                    VStack(alignment: .center) {
                         Text("Patient ID:")
                             .font(.headline)
                         

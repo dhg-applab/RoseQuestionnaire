@@ -9,24 +9,17 @@ import SwiftUI
 
 struct RoseQuestion: View {
     let title: String
-    let answers: [String]
     @Binding var selection: String
     
-    init(title: String, answers: [String] = ["Yes", "No", "I don't know"], selection: Binding<String>) {
-        self.title = title
-        self.answers = answers
-        self._selection = selection
-    }
-    
     var body: some View {
-        VStack(alignment: .leading, spacing: 12.0) {
+        VStack(alignment: .leading) {
             Text(title)
                 .font(.headline)
             
-            Picker("Test", selection: $selection) {
-                ForEach(answers, id: \.self) {
-                    Text($0)
-                }
+            Picker("", selection: $selection) {
+                Text("Yes").tag("Yes")
+                Text("No").tag("No")
+                Text("I don't know").tag("I don't know")
             }.pickerStyle(.segmented)
         }
         .padding(.vertical)
