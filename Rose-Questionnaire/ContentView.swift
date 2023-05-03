@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftletRadioButtonPicker
 
 struct ContentView: View {
     @State var patientID: String = ""
@@ -58,8 +57,9 @@ struct ContentView: View {
                     Text("Save")
                         .frame(maxWidth: .infinity)
                         .padding(5)
-                }.buttonStyle(BorderedProminentButtonStyle())
-                    .disabled(saveButtonDisabled)
+                }
+                .buttonStyle(.borderedProminent)
+                .disabled(saveButtonDisabled)
             }
             .navigationTitle("Rose Questionnaire")
             .padding()

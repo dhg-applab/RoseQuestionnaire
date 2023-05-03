@@ -17,10 +17,16 @@ struct RoseQuestion: View {
                 .font(.headline)
             
             Picker("", selection: $selection) {
-                Text("Yes").tag("Yes")
-                Text("No").tag("No")
-                Text("I don't know").tag("I don't know")
-            }.pickerStyle(.segmented)
+                Text("Yes")
+                    .tag("Yes")
+                
+                Text("No")
+                    .tag("No")
+                
+                Text("I don't know")
+                    .tag("I don't know")
+            }
+            .pickerStyle(.segmented)
         }
         .padding(.vertical)
     }
