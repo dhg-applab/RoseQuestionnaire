@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RoseQuestion: View {
+struct RoseQuestionView: View {
     let title: String
     @Binding var selection: String
     
@@ -17,17 +17,23 @@ struct RoseQuestion: View {
                 .font(.headline)
             
             Picker("", selection: $selection) {
-                Text("Yes").tag("Yes")
-                Text("No").tag("No")
-                Text("I don't know").tag("I don't know")
-            }.pickerStyle(.segmented)
+                Text("Yes")
+                    .tag("Yes")
+                
+                Text("No")
+                    .tag("No")
+                
+                Text("I don't know")
+                    .tag("I don't know")
+            }
+            .pickerStyle(.segmented)
         }
         .padding(.vertical)
     }
 }
 
-struct RoseQuestion_Previews: PreviewProvider {
+struct RoseQuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        RoseQuestion(title: "This is a sample question", selection: .constant(""))
+        RoseQuestionView(title: "This is a sample question", selection: .constant(""))
     }
 }
