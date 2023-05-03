@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RoseQuestion: View {
+struct RoseQuestionView: View {
     let title: String
     @Binding var selection: String
     
@@ -32,8 +32,8 @@ struct RoseQuestion: View {
     }
 }
 
-struct RoseQuestion_Previews: PreviewProvider {
+struct RoseQuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        RoseQuestion(title: "This is a sample question", selection: .constant(""))
+        RoseQuestionView(title: "This is a sample question", selection: .constant(""))
     }
 }

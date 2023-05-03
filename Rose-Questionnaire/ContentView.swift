@@ -26,19 +26,19 @@ struct ContentView: View {
                             .textFieldStyle(.roundedBorder)
                             .padding(.bottom, 20.0)
                         
-                        RoseQuestion(
+                        RoseQuestionView(
                             title: "Within the last 1 year, have you ever had a severe pain across the front of your chest lasting for half an hour or more?",
                             selection: $question1)
 
-                        RoseQuestion(
+                        RoseQuestionView(
                             title: "Within the last 1 year, have you ever had any pain or discomfort in your chest?",
                             selection: $question2)
 
-                        RoseQuestion(
+                        RoseQuestionView(
                             title: "Did you get it when you walked uphill or hurry?",
                             selection: $question3)
 
-                        RoseQuestion(
+                        RoseQuestionView(
                             title: "Did you get it when you walked at an ordinary pace on the level?",
                             selection: $question4)
                         
