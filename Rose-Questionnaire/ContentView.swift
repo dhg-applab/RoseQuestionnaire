@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                
+                // Teil 1: Hier einfachen Bildschirm implementieren
             }
             .navigationTitle("Rose Questionnaire")
             .padding()
