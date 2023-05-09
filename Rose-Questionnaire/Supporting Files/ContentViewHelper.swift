@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/*
 extension ContentView {
     var answers: [String: String] {
         [
@@ -39,3 +40,4 @@ extension ContentView {
         return csvString
     }
 }
+*/
