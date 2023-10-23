@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3593BA682AE65266002E01CE /* texts.md in Resources */ = {isa = PBXBuildFile; fileRef = 3593BA672AE65266002E01CE /* texts.md */; };
 		35EDC31129FBC82E00603173 /* Rose_QuestionnaireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EDC31029FBC82E00603173 /* Rose_QuestionnaireApp.swift */; };
 		35EDC31329FBC82E00603173 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EDC31229FBC82E00603173 /* ContentView.swift */; };
 		35EDC31529FBC82F00603173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35EDC31429FBC82F00603173 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3593BA672AE65266002E01CE /* texts.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = texts.md; sourceTree = "<group>"; };
 		35EDC30D29FBC82E00603173 /* Rose-Questionnaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rose-Questionnaire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35EDC31029FBC82E00603173 /* Rose_QuestionnaireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rose_QuestionnaireApp.swift; sourceTree = "<group>"; };
 		35EDC31229FBC82E00603173 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				35EDC31029FBC82E00603173 /* Rose_QuestionnaireApp.swift */,
 				446C05792A0015210057394B /* ContentViewHelper.swift */,
+				3593BA672AE65266002E01CE /* texts.md */,
 				35EDC31429FBC82F00603173 /* Assets.xcassets */,
 				35EDC31629FBC82F00603173 /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35EDC31829FBC82F00603173 /* Preview Assets.xcassets in Resources */,
+				3593BA682AE65266002E01CE /* texts.md in Resources */,
 				35EDC31529FBC82F00603173 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

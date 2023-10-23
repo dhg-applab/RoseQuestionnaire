@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var patientID: String = ""
     @State var question1: String = ""
     @State var question2: String = ""
     @State var question3: String = ""
@@ -19,12 +18,7 @@ struct ContentView: View {
             VStack(alignment: .center) {
                 ScrollView {
                     VStack(alignment: .center) {
-                        Text("Patient ID:")
-                            .font(.headline)
-                        
-                        TextField("Enter the patient ID", text: $patientID)
-                            .textFieldStyle(.roundedBorder)
-                            .padding(.bottom, 20.0)
+                        Image("ukb-logo")
                         
                         RoseQuestionView(
                             title: "Within the last 1 year, have you ever had a severe pain across the front of your chest lasting for half an hour or more?",
@@ -43,7 +37,7 @@ struct ContentView: View {
                             selection: $question4)
                         
                         Button(action: resetQuestionnaire) {
-                            Label("Repeat", systemImage: "repeat")
+                            Text("Repeat")
                                 .tint(.red)
                         }
                         .padding()

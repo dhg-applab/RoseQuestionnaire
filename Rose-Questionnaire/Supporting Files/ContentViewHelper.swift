@@ -10,7 +10,6 @@ import SwiftUI
 extension ContentView {
     var answers: [String: String] {
         [
-            "patientID": patientID,
             "Within the last 1 year, have you ever had a severe pain across the front of your chest lasting for half an hour or more?": question1,
             "Within the last 1 year, have you ever had any pain or discomfort in your chest?": question2,
             "Did you get it when you walked uphill or hurry?": question3,
@@ -18,11 +17,10 @@ extension ContentView {
         ]
     }
     var saveButtonDisabled: Bool {
-        patientID.isEmpty || question1.isEmpty || question2.isEmpty || question3.isEmpty || question4.isEmpty
+        question1.isEmpty || question2.isEmpty || question3.isEmpty || question4.isEmpty
     }
     
     func resetQuestionnaire() {
-        patientID = ""
         question1 = ""
         question2 = ""
         question3 = ""
