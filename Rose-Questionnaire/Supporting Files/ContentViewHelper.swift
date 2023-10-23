@@ -16,6 +16,7 @@ extension ContentView {
             "Did you get it when you walked at an ordinary pace on the level?": question4
         ]
     }
+    
     var saveButtonDisabled: Bool {
         question1.isEmpty || question2.isEmpty || question3.isEmpty || question4.isEmpty
     }
