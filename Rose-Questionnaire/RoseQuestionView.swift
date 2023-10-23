@@ -18,13 +18,13 @@ struct RoseQuestionView: View {
             
             Picker("", selection: $selection) {
                 Text("Yes")
-                    .tag("Yes")
+                    .tag("Positive")
                 
                 Text("No")
-                    .tag("No")
+                    .tag("Negative")
                 
                 Text("I don't know")
-                    .tag("I don't know")
+                    .tag("Unknown")
             }
             .pickerStyle(.segmented)
         }
@@ -32,8 +32,6 @@ struct RoseQuestionView: View {
     }
 }
 
-struct RoseQuestionView_Previews: PreviewProvider {
-    static var previews: some View {
-        RoseQuestionView(title: "This is a sample question", selection: .constant(""))
-    }
+#Preview {
+    RoseQuestionView(title: "This is a sample question", selection: .constant(""))
 }
