@@ -19,8 +19,6 @@ struct RoseQuestionView: View {
     }
 }
 
-struct RoseQuestionView_Previews: PreviewProvider {
-    static var previews: some View {
-        RoseQuestionView(title: "This is a sample question", selection: .constant(""))
-    }
+#Preview {
+    RoseQuestionView(title: "This is a sample question", selection: .constant(""))
 }
