@@ -13,20 +13,7 @@ struct RoseQuestionView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(title)
-                .font(.headline)
-            
-            Picker("", selection: $selection) {
-                Text("Yes")
-                    .tag("Positive")
-                
-                Text("No")
-                    .tag("Negative")
-                
-                Text("I don't know")
-                    .tag("Unknown")
-            }
-            .pickerStyle(.segmented)
+            // Teil 2: Hier Text & Picker einfügen
         }
         .padding(.vertical)
     }
