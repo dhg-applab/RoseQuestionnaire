@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var question1: String = ""
-    @State var question2: String = ""
-    @State var question3: String = ""
-    @State var question4: String = ""
+    
+    // Hinweis: Diese `Variablen` sind für die Antworten auf vier Fragen.
+    @State var question1 = ""
+    @State var question2 = ""
+    @State var question3 = ""
+    @State var question4 = ""
     
     var body: some View {
         NavigationStack {
